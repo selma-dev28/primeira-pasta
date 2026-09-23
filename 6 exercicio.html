@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p>digite um número:</p>
+   <input type="number" name="" id="caixa">
+   <p id="resultado"></p>
+   <script>
+       let caixa = document.querySelector("#caixa");
+       let resultado = document.querySelector("#resultado");
+       caixa.addEventListener("change", function(){
+        if(this.value % 2 == 0 && this.value > 0){
+           resultado.textContent = this.value + ' positivo par';
+        } else if(this.value % 2 != 0 && this.value > 0){
+           resultado.textContent = this.value + ' positivo impar';
+        } else if(this.value % 2 == 0 && this.value < 0){
+           resultado.textContent = this.value + ' negativo par';
+        } else if(this.value % 2 != 0 && this.value < 0){
+           resultado.textContent = this.value + ' negativo impar';
+
+           
+        } else{
+         resultado.textContent = this.value + ' neutro';
+   
+       }
+    })
+
+
+   </script>
+
+   </p> 
+</body>
+</html>
+
+   <!-- <p>digite um número:</p>
+   <input type="number" name="" id="caixa">
+   <p id="resultado"></p>
+   <script>
+       let caixa = document.queryselctor("#caixa");
+       let resultado = document.queryselector("#resultado");
+       caixa.addEventlistener("change", function(){
+        
+
+       })
+
+
+   </script> -->

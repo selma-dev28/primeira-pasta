@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Digite um número:</p>
+    <input type="number" name="" id="caixa">
+    <p id="resultado"></p>
+    <script>
+        let caixa = document.querySelector("#caixa");
+        let resultado = document.querySelector("#resultado");
+        caixa.addEventListener("change", function(){
+         if (this.value % 4 == 0 && this.value % 100 != 0){
+         resultado. textContent = ' Ano bissexto'
+         } else if(this.value % 4 == 0 && this.value % 100 == 0 && this.value % 400 == 0){
+            resultado.textContent= 'Ano bissexto'
+         } else {
+         resultado.textContent= 'Não é bissexto'
+
+         }
+
+        })
